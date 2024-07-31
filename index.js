@@ -16,6 +16,14 @@ $(".btn").click(function() {
     //console.log(userClickedPattern);
 });
 
+$("#start-btn").click(function() {
+    if (!started) {
+        nextSequence();
+        started = true;
+        $("#level-title").text("Level " + level);
+    }
+});
+
 // Detect when a keyboard key has been pressed, call nextSequence() only once
 $(document).keydown(function(event) {
     if (!started) {
