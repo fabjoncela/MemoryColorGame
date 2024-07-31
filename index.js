@@ -21,6 +21,7 @@ $("#start-btn").click(function() {
         nextSequence();
         started = true;
         $("#level-title").text("Level " + level);
+        console.log("pressed");
     }
 });
 
